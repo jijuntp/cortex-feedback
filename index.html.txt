@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CORTEX CLIENTS FEEDBACK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="card">
+    <h2>CORTEX CLIENTS FEEDBACK FORM</h2>
+
+    <form id="feedbackForm">
+      <input type="text" name="NAME" placeholder="YOUR NAME *" required>
+      <input type="text" name="COMPANY" placeholder="COMPANY NAME *" required>
+      <input type="text" name="DESIGNATION" placeholder="DESIGNATION *" required>
+
+      <label>HOW WOULD YOU RATE YOUR OVERALL EXPERIENCE WITH CORTEX?</label>
+      <select name="EXPERIENCE" required>
+        <option value="">SELECT</option>
+        <option>EXCELLENT</option>
+        <option>GOOD</option>
+        <option>AVERAGE</option>
+        <option>POOR</option>
+      </select>
+
+      <label>HOW SATISFIED ARE YOU WITH OUR SERVICE QUALITY?</label>
+      <select name="SERVICE_QUALITY" required>
+        <option value="">SELECT</option>
+        <option>VERY SATISFIED</option>
+        <option>SATISFIED</option>
+        <option>NEUTRAL</option>
+        <option>DISSATISFIED</option>
+        <option>VERY DISSATISFIED</option>
+      </select>
+
+      <textarea name="VALUE_ADDED" placeholder="WHAT ADDED MOST VALUE?" required></textarea>
+
+      <textarea name="IMPROVEMENTS" placeholder="AREAS TO IMPROVE?" required></textarea>
+
+      <button type="submit">SUBMIT FEEDBACK</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

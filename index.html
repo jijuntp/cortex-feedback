@@ -1,32 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>CORTEX CLIENTS FEEDBACK</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<form id="feedbackForm">
 
-<div class="wrapper">
-  <div class="card">
-    <h2>CORTEX CLIENTS FEEDBACK FORM</h2>
+  <input type="text" name="NAME" placeholder="YOUR NAME *" required>
+  <input type="text" name="COMPANY" placeholder="COMPANY NAME *" required>
+  <input type="text" name="DESIGNATION" placeholder="DESIGNATION *" required>
 
-    <form id="feedbackForm">
+  <label>HOW WOULD YOU RATE YOUR OVERALL EXPERIENCE WITH CORTEX?</label>
+  <select name="EXPERIENCE" required>
+    <option value="">SELECT</option>
+    <option>EXCELLENT</option>
+    <option>GOOD</option>
+    <option>AVERAGE</option>
+    <option>POOR</option>
+  </select>
 
-      <input type="text" name="NAME" placeholder="YOUR NAME *" required>
-      <input type="text" name="COMPANY" placeholder="COMPANY NAME *" required>
-      <input type="text" name="DESIGNATION" placeholder="DESIGNATION *" required>
+  <label>HOW SATISFIED ARE YOU WITH OUR SERVICE QUALITY?</label>
+  <select name="SERVICE_QUALITY" required>
+    <option value="">SELECT</option>
+    <option>VERY SATISFIED</option>
+    <option>SATISFIED</option>
+    <option>NEUTRAL</option>
+    <option>DISSATISFIED</option>
+    <option>VERY DISSATISFIED</option>
+  </select>
 
-      <label>HOW WOULD YOU RATE YOUR OVERALL EXPERIENCE WITH CORTEX?</label>
-      <select name="EXPERIENCE" required>
-        <option value="">SELECT</option>
-        <option>EXCELLENT</option>
-        <option>GOOD</option>
-        <option>AVERAGE</option>
+  <label>HOW WELL DID THE DELIVERABLES MEET YOUR EXPECTATIONS?</label>
+  <select name="DELIVERABLES" required>
+    <option value="">SELECT</option>
+    <option>EXCEEDED EXPECTATIONS</option>
+    <option>MET EXPECTATIONS</option>
+    <option>BELOW EXPECTATIONS</option>
+  </select>
 
+  <label>EFFECTIVENESS OF CORTEX SOLUTIONS</label>
+  <select name="EFFECTIVENESS" required>
+    <option value="">SELECT</option>
+    <option>EXCELLENT</option>
+    <option>GOOD</option>
+    <option>AVERAGE</option>
+    <option>POOR</option>
+  </select>
 
-<script src="script.js"></script>
-</body>
-</html>
+  <label>SATISFACTION WITH RESULTS AND OUTCOMES</label>
+  <select name="RESULTS" required>
+    <option value="">SELECT</option>
+    <option>VERY SATISFIED</option>
+    <option>SATISFIED</option>
+    <option>NEUTRAL</option>
+    <option>DISSATISFIED</option>
+    <option>VERY DISSATISFIED</option>
+  </select>
 
+  <label>INTERACTION AND RELATIONSHIP WITH THE CORTEX TEAM</label>
+  <select name="INTERACTION" required>
+    <option value="">SELECT</option>
+    <option>HIGHLY EFFECTIVE</option>
+    <option>EFFECTIVE</option>
+    <option>AVERAGE</option>
+    <option>POOR</option>
+  </select>
 
+  <textarea name="VALUE_ADDED"
+    placeholder="WHAT SPECIFIC ASPECTS OF OUR SERVICE ADD THE MOST VALUE?"
+    required></textarea>
+
+  <textarea name="IMPROVEMENTS"
+    placeholder="WHAT AREAS CAN WE IMPROVE?"
+    required></textarea>
+
+  <label>WOULD YOU RECOMMEND CORTEX TO OTHER BUSINESSES?</label>
+  <select name="RECOMMENDATION" required>
+    <option value="">SELECT</option>
+    <option>DEFINITELY</option>
+    <option>PROBABLY</option>
+    <option>NOT SURE</option>
+    <option>NO</option>
+  </select>
+
+  <label>WAS THE AMOUNT SPENT WORTH THE VALUE DELIVERED?</label>
+  <select name="VALUE_WORTH" required>
+    <option value="">SELECT</option>
+    <option>ABSOLUTELY WORTH IT</option>
+    <option>REASONABLY WORTH IT</option>
+    <option>NEUTRAL</option>
+    <option>NOT REALLY WORTH IT</option>
+    <option>NOT WORTH IT AT ALL</option>
+  </select>
+
+  <label>SERVICES YOU WOULD LIKE TO ENGAGE AGAIN</label>
+  <select name="SERVICES" required>
+    <option value="">SELECT</option>
+    <option>PROCESS DOCUMENTATION & SOP DEVELOPMENT</option>
+    <option>BUSINESS PROCESS MAPPING & RE-ENGINEERING</option>
+    <option>COMPLIANCE & CONTROL DOCUMENTATION</option>
+    <option>POLICY & PROCEDURE MANUALS</option>
+    <option>IMPLEMENTATION SUPPORT FOR PROCESS IMPROVEMENTS</option>
+  </select>
+
+  <button type="submit">SUBMIT FEEDBACK</button>
+
+</form>
